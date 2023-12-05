@@ -31,6 +31,8 @@ export const ProfileImg = styled.img`
   border-radius: 50%;
   margin: auto;
   margin-bottom: 15px;
+  border: 1px solid #b8b8b8;
+  padding: 5px;
 `;
 
 export const Name = styled.p`
@@ -70,10 +72,6 @@ export const StatsItem = styled.li`
   border-bottom: 0;
   padding: 15px;
   border-left: none;
-
-  /* &:first-child {
-    border-left: none;
-  } */
   &:last-child {
     border-right: none;
   }

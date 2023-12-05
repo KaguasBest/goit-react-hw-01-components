@@ -22,5 +22,3 @@ export const FriendListItem = ({ friends }) => {
     </>
   );
 };
-
-// {isOnline? style:{backgroundColor:'#d32d2d838'} : style={backgroundColor:' #24b552' }}
