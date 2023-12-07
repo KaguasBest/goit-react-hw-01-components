@@ -1,3 +1,4 @@
+import { randomColor } from 'helpers/randomColor';
 import {
   StatisticsSection,
   StatsItem,
@@ -5,13 +6,12 @@ import {
   StatsList,
   StatsPer,
   StatsTitle,
-  randomColor,
 } from './Statistics.styled';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsSection>
-      <StatsTitle>Upload stats</StatsTitle>
+      {title && <StatsTitle>Upload stats</StatsTitle>}
 
       <StatsList>
         {stats.map(({ id, label, percentage }) => {

@@ -2,7 +2,7 @@ import { Container } from 'components/Container/Container.styled';
 import { Title } from 'components/Title/Title.styled';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
-import { FriendList } from 'components/FriendList/FriendList';
+import { FriendList } from 'components/Friends/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
 import 'index.css';
@@ -25,7 +25,7 @@ export const App = () => {
       />
 
       <Title>Task 2</Title>
-      <Statistics stats={data}></Statistics>
+      <Statistics title="Upload stats" stats={data}></Statistics>
 
       <Title>Task 3</Title>
       <FriendList friends={friends}></FriendList>
